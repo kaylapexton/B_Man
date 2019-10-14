@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace DataStructures.Controllers
+namespace MyMenus.Controllers
 {
     public class HomeController : Controller
     {
@@ -14,35 +14,9 @@ namespace DataStructures.Controllers
             return View();
         }
 
-        //this is the stack place
-        public ActionResult Stack()
-        {
-
-
-            return View();
-        }
-
-        //this is the Queue place
-        public ActionResult Queue()
-        {
-
-
-            return View();
-        }
-
-        //this is the dictionary place
-        public ActionResult Dictionary()
-        {
-
-
-            return View();
-        }
-
-        //this will exit (hopefully)
         public ActionResult Exit()
         {
-
-            return View();
+            return Redirect("http://www.byu.edu")
         }
     }
 }

@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Stack Index</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="@Url.Action("AddOne", "Stack")"
+                   class="w3-bar-item w3-button">Add One Item to Stack</a>
+            </li>
+        </ul>
+    </div>
+    @foreach (var sData in ViewBag.MyStack)
+    {
+        <p>@sData</p>
+    }
+</body>
+</html>
